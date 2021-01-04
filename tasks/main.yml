@@ -1,0 +1,20 @@
+---
+- name: Install Packages
+  ansible.builtin.package:
+    name: "{{ package }}"
+    state: latest
+
+- name: Enable httpd service
+  ansible.builtin.systemd:
+    name: httpd
+    state: started
+    enabled: yes
+  register: httpd_status
+
+- name: Configure firewall
+  ansible.posix.firewalld:
+    zone: public
+    service: http
+    permanent: yes
+    state: enabled
+  notify: firewall reload
