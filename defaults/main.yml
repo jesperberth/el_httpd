@@ -1,6 +1,3 @@
 ---
 package:
    - httpd
-   - mariadb-server
-   - php
-   - php-mysqlnd
