@@ -11,7 +11,12 @@ None
 Role Variables
 --------------
 
-None
+Defaults:
+
+package:
+   - httpd
+
+Add list to variable to install futher packages
 
 Dependencies
 ------------
