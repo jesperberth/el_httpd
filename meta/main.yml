@@ -1,6 +1,6 @@
 galaxy_info:
   author: Jesper Berth
-  description: Installs Apache 2
+  description: Install Apache 2 on Enterprise Linux
   company: Arrow ECS
 
   # If the issue tracker for your role is not on github, uncomment the
