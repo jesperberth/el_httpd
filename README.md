@@ -28,7 +28,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - jesperberth.httpd
+         - jesperberth.el_httpd
 
 License
 -------
